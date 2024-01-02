@@ -4,7 +4,7 @@ module.exports.getToDos = async (req,res) => {
     const toDos = await ToDoModel.find(); 
     res.send(toDos);
 };
-
+//save
 module.exports.saveToDo = (req,res) => {
     const {toDo} = req.body
 
@@ -17,7 +17,7 @@ module.exports.saveToDo = (req,res) => {
         res.send({ error: err, msg: "Something went wrong!" });
     });
 };
-
+//update
 module.exports.updateToDo = (req,res) => {
     const {id} = req.params;
     const {toDo} = req.body;
@@ -30,7 +30,7 @@ module.exports.updateToDo = (req,res) => {
         res.send({ error: err, msg: "Something went wrong!" });
     });
 };
-
+//delete
 module.exports.deleteToDo = (req,res) => {
     const {id} = req.params
 
