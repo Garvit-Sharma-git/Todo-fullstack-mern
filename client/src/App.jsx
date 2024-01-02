@@ -33,7 +33,7 @@ const App = () => {
     <main>
       <div className="container">
         <h1 className="title">ToDo App</h1>
-
+        <p>Easy peasy lemon squeazyy !! -Garvit Sharma</p>
         <div className="input_holder">
           <input
             value={input}
